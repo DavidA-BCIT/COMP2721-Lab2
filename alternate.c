@@ -25,9 +25,7 @@ static_assert(0 < LED_1 < 28 && 0 < LED_2 < 28, "Can only use GPIO slots 2-27");
 // Frequency of flashes (in Hz)
 #define DELAY 2
 
-// Bools
-
-// Consts
+// GPIO Memory Addresses
 static volatile unsigned int GPIO_Base = 0x3F200000;     //GPIO base
 static volatile uint32_t *GPIO;
 static const unsigned int GPIO_Mask = 0xFFFFFFC0;
